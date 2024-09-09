@@ -125,9 +125,10 @@ alarm_model.add_cpds(
 alarm_model.check_model()
 inference=VariableElimination(alarm_model)
 query='Burglary'
-evidence = {'JohnCalls': True, 'MaryCalls': True} # Example evidence 
+evidence={"JohnCalls":1,"MaryCalls":0}
 res = inference.query(variables=[query], evidence=evidence)
 print(res)
+
 evidence2={"JohnCalls":1,"MaryCalls":1}
 res2=inference.query(variables=[query],evidence=evidence2)
 print(res2)
@@ -135,9 +136,11 @@ print(res2)
 
 ## Output :
 ![21](https://github.com/user-attachments/assets/924b33d1-5328-4f8a-8479-1c8389052591)
+
 ![22](https://github.com/user-attachments/assets/7513104b-d540-40d3-b9a1-6d4a11b91fd5)
+
 ![23](https://github.com/user-attachments/assets/cdad589a-165e-4f7b-86a4-c3aee2e52eff)
 
 
 ## Result :
-Thus, Bayesian Inference was successfully determined using Variable Elimination Method
+Thus, Bayesian Inference was successfully determined using Variable Elimination Method.
