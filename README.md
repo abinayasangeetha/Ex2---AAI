@@ -19,7 +19,7 @@ Step 7: Print the results.<br>
 
 ## Program :
 
-### Program :
+
 ```
 # Importing Library
 from pgmpy.models import BayesianNetwork
